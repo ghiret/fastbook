@@ -96,3 +96,20 @@ def cluster_columns(df, figsize=(10,6), font_size=12):
     fig = plt.figure(figsize=figsize)
     hc.dendrogram(z, labels=df.columns, orientation='left', leaf_font_size=font_size)
     plt.show()
+
+import torch
+
+def check_device():
+    if torch.backends.mps.is_available():
+        device = torch.device("mps")
+        print("MPS (Apple Silicon GPU) is available.")
+        print(f"Using device: {device}")
+    elif torch.cuda.is_available():
+        device = torch.device("cuda")
+        print("CUDA (NVIDIA GPU) is available.")
+        print(f"Using device: {device}")
+    else:
+        device = torch.device("cpu")
+        print("No GPU available, using CPU.")
+        print(f"Using device: {device}")
+    return device
