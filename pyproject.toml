@@ -1,0 +1,30 @@
+[project]
+name = "fastbook"
+version = "0.0.1"
+description = "fastbook"
+authors = [
+    {name = "Jeremy Howard and Sylvain Gugger", email = "info@fast.ai"}
+]
+keywords = ["jupyter", "notebook", "asciidoc"]
+requires-python = ">=3.6"
+license = {text = "custom"}
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://github.com/fastai/fastbook/tree/master/"
+Documentation = "https://fastai.github.io/fastbook/"
+
+[tool.nbdev]
+nbs_path = "."
+doc_path = "docs"
+lib_path = "fastbook"
+git_url = "https://github.com/fastai/fastbook/tree/master/"
+branch = "master"
+custom_sidebar = false
+doc_host = "https://fastai.github.io"
+doc_baseurl = "/fastbook/"
+host = "github"
+audience = "Developers"
+language = "English"
+status = 2
+copyright = "fast.ai"
