@@ -9,6 +9,9 @@ keywords = ["jupyter", "notebook", "asciidoc"]
 requires-python = ">=3.6"
 license = {text = "custom"}
 readme = "README.md"
+dependencies = [
+    "jupyterlab>=2.3.2",
+]
 
 [project.urls]
 Homepage = "https://github.com/fastai/fastbook/tree/master/"
