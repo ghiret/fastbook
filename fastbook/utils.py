@@ -3,7 +3,7 @@ from fastai.vision.all import *
 from nbdev.showdoc import *
 from ipywidgets import widgets
 from pandas.api.types import CategoricalDtype
-
+from fastdownload import download_url
 import matplotlib as mpl
 import json
 
